@@ -1,13 +1,41 @@
-/* Reduce all spacing (from 1rem) -- horizontal and vertical */
+/* Reduce ALL spacing (from 1rem) -- horizontal and vertical */
 :root {
     --spacing: 0.5rem;
 }
+
+/* Reduce max width of container elements (nav, main, footer) *.flex-container
+.container {
+    max-width: 640px;
+} */
+
 /* Reduce height of nav bar */
 nav {
     --nav-element-spacing-vertical: 0.5rem;
 }
+
+/* Reduce top/bottom margin of headings */
+h1,
+h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+/* Reduce top/bottom margin of articles */
+article {
+    margin-top: 0;
+    padding-top: 1rem;
+}
+article > footer {
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
 /* Reduce vertical spacing for main and footer */
-body > main,
+body > main {
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+}
 body > footer {
     padding-top: 1rem;
     padding-bottom: 1rem;
